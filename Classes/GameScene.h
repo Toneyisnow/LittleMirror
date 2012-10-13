@@ -1,0 +1,59 @@
+//
+//  GameScene.h
+//  PadTest
+//
+//  Created by sui toney on 11-7-5.
+//  Copyright 2011 ms. All rights reserved.
+//
+
+#import "cocos2d.h"
+#import "Brick.h"
+#import "GameConfig.h"
+#import "GameStage.h"
+#import "GameButton.h"
+
+@interface GameScene : CCLayer {
+
+	Brick *gamePanel[GAME_WIDTH][GAME_HEIGHT];
+	Brick *mirrorsPanel[MIRROR_WIDTH][MIRROR_HEIGHT];
+	Brick *selectedBrick;
+	
+	int selectedItemId;	// The item id of the last selected Brick. It needs to be 
+						// saved into this, since the item maybe picked up from the Brick
+	
+	GameStage *gameStage;
+	
+	DrawableType *holdingDrawableType;
+	CCSprite *holdingSprite;
+	
+	GameButton *previousButton;
+	GameButton *nextButton;
+	GameButton *resetButton;
+	GameButton *backButton;
+	
+	// CCSprite *test;
+	// Mirror *testMirror;
+}
+
++(id) scene:(int)stage;
+-(void) initPanel;
+-(void) loadStage:(int)stage;
+
+// Game Flow
+-(void) resetStage;
+-(void) backToHomePage;
+-(void) goToPreviousStage;
+-(void) goToNextStage;
+
+-(void) updateItems;
+-(void) drawItems;
+-(void) checkWin;
+-(void) response;
+-(void) win;
+
+-(void) saveSelectedItem:(int)itemId toBrick:(Brick *)brick;
+
+-(Brick *) locateBrick:(CGPoint)point;
+
+
+@end

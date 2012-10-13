@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/littlemirror/!svn/ver/1/libs/FontLabel
+END
+FontLabelStringDrawing.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/FontLabelStringDrawing.h
+END
+FontLabel.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/FontLabel.m
+END
+ZAttributedString.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/ZAttributedString.m
+END
+FontLabelStringDrawing.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/FontLabelStringDrawing.m
+END
+ZFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/ZFont.h
+END
+FontManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/FontManager.h
+END
+ZAttributedStringPrivate.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/ZAttributedStringPrivate.h
+END
+ZFont.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/ZFont.m
+END
+FontLabel.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/FontLabel.h
+END
+FontManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/FontManager.m
+END
+ZAttributedString.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/littlemirror/!svn/ver/1/libs/FontLabel/ZAttributedString.h
+END

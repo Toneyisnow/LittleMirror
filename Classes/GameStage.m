@@ -1,0 +1,138 @@
+//
+//  Stage.m
+//  PadTest
+//
+//  Created by sui toney on 11-7-10.
+//  Copyright 2011 ms. All rights reserved.
+//
+
+#import "GameStage.h"
+
+@implementation GameStage
+
+
+-(id) initWithId:(int)i {
+
+	self = [super init];
+	stageId = i;
+	dbManager = [DBManager sharedManager];
+	return self;
+}
+
+-(void) update:(GameRecord *)record {
+
+	
+	[self takeRecord];
+	
+	BrickLocation *location = [record location];
+	DrawableType *drawableType = [record drawableType];
+	int itemId = [record itemId];
+	
+	NSString *queryString = 
+		[NSString stringWithFormat: @"UPDATE StageRecord SET panel=%d,positionX=%d,positionY=%d,item=%d,type=%d,direction=%d WHERE stageid=%d AND itemid=%d;",
+			[location panel],
+			[location posX],
+			[location posY],
+			[drawableType item],
+			[drawableType type],
+			[drawableType subtype],
+			stageId,
+			itemId];
+	
+	[dbManager execute:queryString];
+
+}
+
+-(void) clearAllRecord {
+
+	NSString *query = [NSString stringWithFormat: @"DELETE FROM StageRecord WHERE stageid = %d;", stageId];
+	[dbManager execute:query];
+}
+
+-(void) takeRecord {
+
+	NSString *recordexists = [NSString stringWithFormat: @"SELECT * FROM StageRecord WHERE stageid = %d;", stageId];
+	if ([dbManager exists:recordexists]) {
+		return;
+	}
+	
+	NSString *insertString = [NSString stringWithFormat: @"INSERT INTO StageRecord SELECT * FROM StageDefinition WHERE stageid = %d;", stageId];
+	[dbManager execute:insertString];
+}
+
+-(NSMutableArray *) loadAll {
+
+	NSMutableArray *records = [[NSMutableArray alloc] init];
+	
+	NSString *tableName = @"StageDefinition";
+	NSString *recordexists = [NSString stringWithFormat: @"SELECT * FROM StageRecord WHERE stageid = %d;", stageId];
+	if ([dbManager exists:recordexists]) {
+		tableName = @"StageRecord";
+	}
+	
+	NSString *queryString = [NSString stringWithFormat: @"SELECT * FROM %@ WHERE stageid = %d;", tableName, stageId];
+	
+	sqlite3_stmt *statement = [dbManager query:queryString];
+	if (statement == nil) {
+		return records;
+	}
+	
+	while(sqlite3_step(statement) == SQLITE_ROW) {
+		int itemId  = [[self parse:statement column:1] intValue];
+		int panel   = [[self parse:statement column:2] intValue];
+		int posX    = [[self parse:statement column:3] intValue];
+		int posY    = [[self parse:statement column:4] intValue];
+		int item    = [[self parse:statement column:5] intValue];
+		int itemType= [[self parse:statement column:6] intValue];
+		int subType = [[self parse:statement column:7] intValue];
+		
+		BrickLocation *location = [[BrickLocation alloc] initWithPanel:panel X:posX Y:posY];
+		DrawableType *drawableType = [[DrawableType alloc] initWithItem:item type:itemType subType:subType];
+		GameRecord *r = [[GameRecord alloc] initWithId:itemId location:location drawableType:drawableType];
+		
+		[records addObject:r];
+		
+		[r release];
+		[location release];
+		[drawableType release];
+	}
+	sqlite3_finalize(statement);
+	// [dbManager closeDB];
+	
+	return records;
+}
+
+-(int) stageId {
+	return stageId;
+}
+
+-(int) getStatus {
+
+	NSString *queryString = [NSString stringWithFormat: @"SELECT status FROM Stage WHERE id = %d;", stageId];
+	sqlite3_stmt *statement = [dbManager query:queryString];
+	if (statement == nil) {
+		return 0;
+	}
+	
+	if(sqlite3_step(statement) == SQLITE_ROW) {
+		return [[self parse:statement column:0] intValue];
+	}
+	
+	return 0;
+}
+
+-(NSString *) parse:(sqlite3_stmt *)statement column:(int)col {
+
+	char *ch = (char *)sqlite3_column_text(statement, col);
+	if (ch == nil) {
+		return nil;
+	}
+	return [NSString stringWithUTF8String:ch];
+}
+
+-(void) dealloc {
+
+	[super dealloc];
+}
+
+@end

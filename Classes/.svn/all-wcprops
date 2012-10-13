@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/littlemirror/!svn/ver/1/Classes
+END
+LittleMirrorAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/littlemirror/!svn/ver/1/Classes/LittleMirrorAppDelegate.m
+END
+Flower.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/littlemirror/!svn/ver/1/Classes/Flower.h
+END
+Flower.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/littlemirror/!svn/ver/1/Classes/Flower.m
+END
+Laser.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/littlemirror/!svn/ver/1/Classes/Laser.h
+END
+GameRecord.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/littlemirror/!svn/ver/1/Classes/GameRecord.h
+END
+Mirror.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/littlemirror/!svn/ver/1/Classes/Mirror.h
+END
+Laser.m
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/littlemirror/!svn/ver/1/Classes/Laser.m
+END
+GameRecord.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/littlemirror/!svn/ver/1/Classes/GameRecord.m
+END
+Mirror.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/littlemirror/!svn/ver/1/Classes/Mirror.m
+END
+LocalString.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/littlemirror/!svn/ver/1/Classes/LocalString.h
+END
+SelectStageScene.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/littlemirror/!svn/ver/1/Classes/SelectStageScene.h
+END
+BrickLocation.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/littlemirror/!svn/ver/1/Classes/BrickLocation.h
+END
+DrawableType.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/littlemirror/!svn/ver/1/Classes/DrawableType.h
+END
+SpriteStore.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/littlemirror/!svn/ver/1/Classes/SpriteStore.h
+END
+LocalString.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/littlemirror/!svn/ver/1/Classes/LocalString.m
+END
+SelectStageScene.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/littlemirror/!svn/ver/1/Classes/SelectStageScene.m
+END
+GameScene.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/littlemirror/!svn/ver/1/Classes/GameScene.h
+END
+BrickLocation.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/littlemirror/!svn/ver/1/Classes/BrickLocation.m
+END
+DrawableType.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/littlemirror/!svn/ver/1/Classes/DrawableType.m
+END
+SpriteStore.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/littlemirror/!svn/ver/1/Classes/SpriteStore.m
+END
+Brick.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/littlemirror/!svn/ver/1/Classes/Brick.h
+END
+Ray.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/littlemirror/!svn/ver/1/Classes/Ray.h
+END
+GameScene.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/littlemirror/!svn/ver/1/Classes/GameScene.m
+END
+GameStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/littlemirror/!svn/ver/1/Classes/GameStage.h
+END
+Brick.m
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/littlemirror/!svn/ver/1/Classes/Brick.m
+END
+GameConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/littlemirror/!svn/ver/1/Classes/GameConfig.h
+END
+Ray.m
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/littlemirror/!svn/ver/1/Classes/Ray.m
+END
+GameStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/littlemirror/!svn/ver/1/Classes/GameStage.m
+END
+HomePageScene.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/littlemirror/!svn/ver/1/Classes/HomePageScene.h
+END
+Light.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/littlemirror/!svn/ver/1/Classes/Light.h
+END
+HomePageScene.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/littlemirror/!svn/ver/1/Classes/HomePageScene.m
+END
+Light.m
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/littlemirror/!svn/ver/1/Classes/Light.m
+END
+DBManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/littlemirror/!svn/ver/1/Classes/DBManager.h
+END
+Drawable.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/littlemirror/!svn/ver/1/Classes/Drawable.h
+END
+StageScene.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/littlemirror/!svn/ver/1/Classes/StageScene.h
+END
+RootViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/littlemirror/!svn/ver/1/Classes/RootViewController.h
+END
+LittleMirrorAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/littlemirror/!svn/ver/1/Classes/LittleMirrorAppDelegate.h
+END
+DBManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/littlemirror/!svn/ver/1/Classes/DBManager.m
+END
+Drawable.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/littlemirror/!svn/ver/1/Classes/Drawable.m
+END
+StageScene.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/littlemirror/!svn/ver/1/Classes/StageScene.m
+END
+RootViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/littlemirror/!svn/ver/1/Classes/RootViewController.m
+END
